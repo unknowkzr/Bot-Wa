@@ -30,7 +30,7 @@ const { color } = require('./lib/color')
 fakenomor = '0@s.whatsapp.net'
 const gcrevoke = ["6281804680327-1621430788@g.us"]
 shp = '⬡'
-owner = "6281804680327@s.whatsapp.net"
+owner = "6281299878753@s.whatsapp.net"
 spc1 = '         '
 spc2 = '\n                           '
 spc3 = '                   '
@@ -58,7 +58,7 @@ vertivalLayout: 'default',
 width: 80,
 whitespaceBreak: false
 }), 'cyan'))
-console.log(color(`${spc2}[ • BOT Creator By Senkuu • ]` ,'cyan'))
+console.log(color(`${spc2}[ • BOT Creator By Habibie • ]` ,'cyan'))
 console.log(color(`${spc4}< ================================================== >`, 'cyan'))
 console.log(color(`${spc3}[•]`, 'aqua'), color(`Nama        : ${fake}`, 'white'))
 console.log(color(`${spc3}[•]`, 'aqua'), color(`Bot Version : 2.1.2`, 'white'))

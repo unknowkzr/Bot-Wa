@@ -89,16 +89,16 @@ const tmp_hit = JSON.parse(fs.readFileSync('./src/hit.json'))
 const tmphit = JSON.parse(fs.readFileSync('./src/today.json'))
 //******************** 》Setting《 ********************\\
 menusimpel = false
-owner = "6281804680327@s.whatsapp.net"
-ownerN = "6281804680327"
+owner = "6281299878753@s.whatsapp.net"
+ownerN = "6281299878753"
 setgrup = "6281226770537-1606097314@g.us"
 wa = '0@s.whatsapp.net'
 blocked = []
 public = true
 picdetec = false
 shp = '⬡'
-nama = 'Senku BOT'
-fake = '@Rapaa021_'
+nama = 'DarkBotx'
+fake = '@Darkbotxx21'
 antidel = false
 antical = false
 aread = false
@@ -151,9 +151,9 @@ let {
 //******************** 》Vcard《 ********************\\
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN:Senku シ︎\n'
-            + 'ORG:Owner Senku;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=6281804680327:+62 831-1800-241\n'
+            + 'FN:Owner bott︎\n'
+            + 'ORG:OwnerSDarkbotxx;\n'
+            + 'TEL;type=CELL;type=VOICE;waid=6281299878753:+62 812-9987-8753\n'
             + 'END:VCARD'
             
 const sleep = async (ms) => {
@@ -298,19 +298,19 @@ const arg = chats.slice(command.length + 2, chats.length)
 const argss = body.split(/ +/g)
 
 mess = {
-	wait: '[❕]  _Sedang di proses........._',
+	wait: '[❕]  _Sedang di proses........._🔰',
 	limit: `[❕] Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`,
-	eror: '_Error_',
+	eror: '_Error_❗',
 	success: '✔️ Berhasil ✔️',
 	error: {
-		stick: '_Ulangi bang_',
+		stick: '_Error silakan kirim perintah lagi❗_',
 		Iv: '_Link tidak valid_ '
 	},
 	only: {
 	prem: `*_Kamu belum Terdaftar di Database Premium!!_\n_Ketik ${prefix}owner untuk Sewa Premium!_*`,
-	group: '*_Fitur Dapat digunakan di Dalam Group!_*',
-	ownerG: '*_Fitur Dapat digunakan oleh Owner Group!_*',
-	ownerB: '*_Fitur Khusus Owner Bot!_*',
+	group: '*_Fitur Hanya Dapat digunakan di Dalam Group!_*',
+	ownerG: '*_Fitur Dapat digunakan oleh Pembuat Group!_*',
+	ownerB: '*_Fitur ini Khusus Owner(pemilik) Bot!_*',
 	admin: '*_Fitur dapat Digunakan oleh Admin Group!_*',
 	Badmin: '*_Fitur dapat Digunakan Setelah Bot menjadi ADMIN!_*'
 	}
@@ -391,7 +391,7 @@ senku.sendMessage(from, teks, text,{contextInfo :{text: 'hi',
 isForwarded: false,
 sendEphemeral: false,
 "externalAdReply": {
-                "title": `Whatsapp-BOT\nS e n. (@021senkuu_) •Instagram photos and Videos`,
+                "title": `Whatsapp-BOT\nDarkbotxx. (@Darkbotz_) •Instagram photos and Videos`,
                 "body": "",
                 "previewType": "PHOTO",
                 "thumbnailUrl": "https://telegra.ph/file/bbb5eca08130920edbcb4.jpg",
@@ -756,7 +756,7 @@ moving.O + "@s.whatsapp.net",
 
 if ((senderNumber) && ["Nyerah", "nyerah"].includes(budy) && !isCmd) {
 orangnye = sender
-teks = `@${orangnye.split("@")[0]} Menyerah\n_Yahaha cupu abiez_`
+teks = `@${orangnye.split("@")[0]} Menyerah\n_Yahaha cupu🗿🗿_`
 if (fs.existsSync("./lib/tictactoe/db/" + from + ".json")) {
 fs.unlinkSync("./lib/tictactoe/db/" + from + ".json");
 mentions(teks,[sender],true)
@@ -769,7 +769,7 @@ reply(`Tidak ada sesi yg berlangsung`);
 //******************** 》AntiLink Gc《 ********************\\
 if (isGroup && !sen.key.fromMe && isAntilink) {
 if (budy.includes("://chat.whatsapp.com/")) {
-if (isGroupAdmins) return reply('Your is Admin!! Bot not Found kick You :D')
+if (isGroupAdmins) return reply('Link grup apaan tuh?')
 console.log(color('[KICK]', 'red'), color('Received a link!', 'yellow'))
 reply(`「 *ANTILINK GROUP DETECTOR* 」\n\n_Link Group terdeteksi!!_\n_Kamu akan di kick dari Group!!_`)
 setTimeout(() => {
@@ -818,7 +818,7 @@ let authorname = senku.contacts[from] != undefined ? senku.contacts[from].vname 
 if (authorname != undefined) { } else { authorname = pushname }	
 			
 function addMetadata(packname, author) {	
-if (!packname) packname = 'WABot'; if (!author) author = 'Bot';	
+if (!packname) packname = 'I Hope your fine :D'; if (!author) author = '@Darkbotxx';	
 author = author.replace(/[^a-zA-Z0-9]/g, '');	
 let name = `${author}_${packname}`
 if (fs.existsSync(`./database/stickers/${name}.exif`)) return `./database/stickers/${name}.exif`
@@ -862,7 +862,7 @@ if (budy.toLowerCase() === 'vote'){
 let vote = JSON.parse(fs.readFileSync(`./database/pvote/${from}.json`))
 let _votes = JSON.parse(fs.readFileSync(`./database/vote/${from}.json`))  
 let fil = vote.map(v => v.participant)
-let id_vote = sender ? sender : '6281804680327@s.whatsapp.net'
+let id_vote = sender ? sender : '6283844009539@s.whatsapp.net'
 if(fil.includes(id_vote)) {
 return mentions('@'+sender.split('@')[0]+' Anda sudah vote', fil, true)
 } else {
@@ -884,7 +884,7 @@ mentions(_vote,_p,true)
 const vote = JSON.parse(fs.readFileSync(`./database/pvote/${from}.json`))
 let _votes = JSON.parse(fs.readFileSync(`./database/vote/${from}.json`))  
 let fil = vote.map(v => v.participant)
-let id_vote = sender ? sender : '6281804680327@s.whatsapp.net'
+let id_vote = sender ? sender : '6283844009539@s.whatsapp.net'
 if(fil.includes(id_vote)) {
 return mentions('@'+sender.split('@')[0]+' Anda sudah vote', fil, true)
 } else {
@@ -1107,7 +1107,7 @@ mentions(monospace(tekss), lbt, true)
 break
 
 case 'sc': case 'script':
-reply(`Sc ini menggunakan : https://github.com/SenkuXZ/Bot-Wa`)
+reply(`Copyright free ©️™`)
 break
 
 case 'tutorial':
@@ -1273,7 +1273,7 @@ break
 
 
 case 'test': 
-replyWithFakeLink('*Active!*')
+replyWithFakeLink('*Active For Command!*')
 break
 
 case 'runtime':
@@ -1939,58 +1939,6 @@ break
 			
 //******************** 》DOWNLOAD 《 ********************\\
 
-case 'xnxxsearch':
-if(!isPremium)return reply(mess.only.prem)
-if (!isGroup)return reply(mess.only.group)
-if (!q) return reply(`Example: ${prefix + command} Japanese`)
-get_result = await fetchJson(`https://api.lolhuman.xyz/api/xnxxsearch?apikey=${lol}&query=${q}`)
-reply(mess.wait)
-get_result = get_result.result
-ini_txt = ""
-for (var x of get_result) {
-ini_txt += `Title : ${x.title}\n`
-ini_txt += `Views : ${x.views}\n`
-ini_txt += `Duration : ${x.duration}\n`
-ini_txt += `Uploader : ${x.uploader}\n`
-ini_txt += `Link : ${x.link}\n`
-ini_txt += `Thumbnail : ${x.thumbnail}\n\n`
-}
-reply(ini_txt)
-break
-
-case 'xnxx': case 'xnxxstalk':
-if(!isPremium)return replyl(mess.only.prem)
-if (!isGroup)return reply(mess.only.group)
-if (!q) return reply(`Example: ${prefix + command} https://www.xnxx.com/video-uy5a73b/mom_is_horny_-_brooklyn`)
-get_result = await fetchJson(`https://api.lolhuman.xyz/api/xnxx?apikey=${lol}&url=${q}`)
-reply(mess.wait)
-get_result = get_result.result
-ini_txt = `Title : ${get_result.title}\n`
-ini_txt += `Duration : ${get_result.duration}\n`
-ini_txt += `View : ${get_result.view}\n`
-ini_txt += `Rating : ${get_result.rating}\n`
-ini_txt += `Like : ${get_result.like}\n`
-ini_txt += `Dislike : ${get_result.dislike}\n`
-ini_txt += `Comment : ${get_result.comment}\n`
-ini_txt += `Tag : ${get_result.tag.join(", ")}\n`
-ini_txt += `Description : ${get_result.description}\n`
-ini_txt += "Link : \n"
-ini_link = get_result.link
-                    for (var x of ini_link) {
-ini_txt += `${x.type} - ${x.link}\n\n`
-                    }
-thumbnail = await getBuffer(get_result.thumbnail)
-senku.sendMessage(from, thumbnail, image, { quoted: sen, caption: ini_txt })
-break
-
-case 'xnxxdownload': case 'xnxxdl':
-if(!isPremium)return replyl(mess.only.prem)
-if (!isGroup)return reply(mess.only.group)
-if(!q)return reply(`Search link di Fitur xnxxstalk`)
-reply(mess.wait)
-sendMediaURL(from, `${q}`)
-break
-
 case 'ytdown':
 if(!q) return reply(`*Example : ${prefix + command} Melukis senja`)
 try{
@@ -2082,7 +2030,6 @@ sendMediaURL(from,anu.result.url_video,yt1)
 }
 break
 
-/* CAN BE USED AFTER UPDATE LAST BAILEYS
 case 'play':
 if (!isGroup)return reply(mess.only.group)
 if (args.length < 1) return reply(`Kirim perintah *${prefix}play query*`)
@@ -2109,7 +2056,6 @@ headerType: 4
 await senku.sendMessage(from, gbuttonan, MessageType.buttonsMessage, {quoted:sen})
 })
 break
-*/
 
 case 'playmp3': {
 if (!isGroup)return reply(mess.only.group)
@@ -2551,19 +2497,19 @@ if (isMedia && !sen.message.imageMessage || isQuotedImage) {
 let encmedia = isQuotedImage ? JSON.parse(JSON.stringify(sen).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : sen
 let media = await senku.downloadMediaMessage(encmedia)
 for (let i of bcc){
-senku.sendMessage(i.jid, media, image, {contextInfo: { forwardingScore: 9999, isForwarded:true},caption: `*「 RAPAA BROADCAST 」*\n\n${q}`})
+senku.sendMessage(i.jid, media, image, {contextInfo: { forwardingScore: 9999, isForwarded:true},caption: `*「 BROADCAST 」*\n\n${q}`})
 }
 reply(`Sukses`)
 } else if (isMedia && !sen.message.videoMessage || isQuotedVideo) {
 const encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(sen).replace('quotedM','m')).message.extendedTextMessage.contextInfo : sen
 bc = await senku.downloadMediaMessage(encmedia)
 for (let _ of bcc) {
-senku.sendMessage(_.jid, bc, video, {caption: `*「 Senkuu BROADCAST 」*\n\n${q}`})
+senku.sendMessage(_.jid, bc, video, {caption: `*「 BROADCAST 」*\n\n${q}`})
 }
 reply('Suksess broadcast')
 }	else {
 for (let _ of bcc) {
-sendMess(_.jid, `*「 Senkuu BROADCAST 」*\n\n${q}`)
+sendMess(_.jid, `*「 BROADCAST 」*\n\n${q}`)
 	}
 reply(`Succses BroadCast ${totalchat.length} Total chat`)
 		}
@@ -2575,7 +2521,7 @@ senku.sendMessage(from, {displayname: "jeff", vcard: vcard}, MessageType.contact
 isForwarded: true,
 sendEphemeral: false,
 "externalAdReply": {
-                "title": `S e n. (@021senkuu_) •Instagram Story's`,
+                "title": ` (@Darkbotxx_) •Instagram Story's`,
                 "body": "",
                 "previewType": "PHOTO",
                 "thumbnailUrl": "https://telegra.ph/file/bbb5eca08130920edbcb4.jpg",
